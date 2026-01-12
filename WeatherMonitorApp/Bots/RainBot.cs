@@ -1,0 +1,1 @@
+namespace WeatherMonitorApp.Bots;
