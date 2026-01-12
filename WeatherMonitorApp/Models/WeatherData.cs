@@ -1,8 +1,13 @@
+using WeatherMonitorApp.Structs;
+
 namespace WeatherMonitorApp.Models;
 
+/// <summary>
+/// Weather data model containing location, temperature, and humidity information.
+/// </summary>
 public class WeatherData
 {
-    public string Location { get; set; }
-    public double Temperature { get; set; }
-    public double Humidity { get; set; }
+    public Location Location { get; set; }
+    public Temperature Temperature { get; set; }
+    public Humidity Humidity { get; set; }
 }

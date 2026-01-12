@@ -1,8 +1,0 @@
-namespace WeatherMonitorApp.Models;
-
-public class AppConfig
-{
-    public BotConfiguration RainBot { get; set; }
-    public BotConfiguration SunBot { get; set; }
-    public BotConfiguration SnowBot { get; set; }
-}
