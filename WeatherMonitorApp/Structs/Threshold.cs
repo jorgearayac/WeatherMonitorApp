@@ -1,5 +1,8 @@
 namespace WeatherMonitorApp.Structs;
 
+/// <summary>
+/// Threshold structure representing a value and its unit.
+/// </summary>
 public struct Threshold
 {
     public double Value { get; }

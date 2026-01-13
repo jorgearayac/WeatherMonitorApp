@@ -12,7 +12,7 @@ public class BotConfiguration
     public bool Enabled { get; set; }
     public Threshold? HumidityThreshold { get; set; }
     public Threshold? TemperatureThreshold { get; set; }
-    public string? Message { get; set; }
+    public string Message { get; set; } = string.Empty;
 
     /// <summary>
     /// Validates the bot configuration.

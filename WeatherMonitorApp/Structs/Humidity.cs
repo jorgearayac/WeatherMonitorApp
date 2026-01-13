@@ -16,5 +16,9 @@ public struct Humidity
         Percentage = percentage;
     }
 
+    /// <summary>
+    /// Returns a string representation of the humidity percentage.
+    /// </summary>
+    /// <returns></returns>
     public override string ToString() => $"{Percentage}%";
 }
