@@ -20,7 +20,19 @@ public class BotFactory : IBotFactory
         ArgumentNullException.ThrowIfNull(appConfiguration);
 
         var bots = new List<IWeatherObserver>();
+        
+        AddBots(appConfiguration, bots);
 
+        return bots;
+    }
+
+    /// <summary>
+    /// Helper method to add bots based on configuration.
+    /// </summary>
+    /// <param name="appConfiguration"></param>
+    /// <param name="bots"></param>
+    private static void AddBots(AppConfiguration appConfiguration, List<IWeatherObserver> bots)
+    {
         if (appConfiguration.RainBot != null)
         {
             bots.Add(new RainBot(appConfiguration.RainBot));
@@ -35,7 +47,5 @@ public class BotFactory : IBotFactory
         {
             bots.Add(new SnowBot(appConfiguration.SnowBot));
         }
-
-        return bots;
     }
 }
