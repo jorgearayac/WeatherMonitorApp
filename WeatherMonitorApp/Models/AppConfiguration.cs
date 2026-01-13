@@ -5,9 +5,9 @@ namespace WeatherMonitorApp.Models;
 /// </summary>
 public class AppConfiguration
 {
-    public required BotConfiguration RainBot { get; set; }
-    public required BotConfiguration SunBot { get; set; }
-    public required BotConfiguration SnowBot { get; set; }
+    public BotConfiguration? RainBot { get; set; }
+    public BotConfiguration? SunBot { get; set; }
+    public BotConfiguration? SnowBot { get; set; }
 
     /// <summary>
     /// Validates the application configuration.

@@ -34,7 +34,11 @@ public class BotConfiguration
                 break;
             
             case BotType.Sun:
-            // SunBot may not require specific thresholds
+                if (!TemperatureThreshold.HasValue)
+                {
+                    throw new InvalidOperationException("SunBot requires a TemperatureThreshold.");
+                }
+                break;
             
             case BotType.Snow:
                 if (!TemperatureThreshold.HasValue)
